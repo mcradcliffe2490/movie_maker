@@ -1,0 +1,23 @@
+#code that makes random funny movie titles from a dictionary 
+#made in Pyhton
+
+
+
+import random
+
+movieTitle=[ "Boogey Man", "Computer Boy", "Socks with Sandals", "Bread", ".M.", "Water", "Fire Alarm", "Living on a Prayer", "Cars", "Humans", "People Who Talk on Their Phone Really Loud In Public", "Topical Storm", "Looking for Love", "Tinder" ]
+
+movieEnds=["Return of the Returning Thing, Which You Knew Was Returning Because You Returned To Watch It Return", "3 or 4, We Dont Really Remember Anymore To Be Honest", "the Movie", "A True Story That We Made Up", "The CashGrab", "The Reckoning", "A Journey From Within","A Remake No One Wanted But We Made It Anyways"  ]
+
+movieTaglines=["a deep dive into the emotions of bread and why the sandwhich massaceres need to stop", " an experience you wont forget until you leave the theater", "please give us a good review on rotten tomatoes", "did we already say this is a cash grab?" , "because we have too much money to waste", "half of the proceeds go to a charity we refuse to discolose but we want the clout for charity work"]
+
+stars=["an A list actor whose name you can't remember but whose face you recognize" , "not John Cena because if he was in the movie, you wouldn't be able to see him", "Chuck Norris","Tom Hanks playing Tom Hanks" ,"Kevin as the Computer",  "Christopher Robin", "MICHEAL FLIPPING BAY *credits explode*", "your cousin's sister's godson's best friend from third grade"]
+
+
+for i in range(1, 11, 1):
+  Movietitle=random.choice(movieTitle)
+  Movieends=random.choice(movieEnds)
+  Movietag=random.choice(movieTaglines)
+  starsran=random.choice(stars)
+  print(i)
+  print ( Movietitle + ": " + Movieends + "--"+ Movietag+ " and Starring " + starsran )
